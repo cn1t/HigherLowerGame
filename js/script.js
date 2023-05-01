@@ -298,6 +298,19 @@ const data = {
     'Das magische Schwanenpaar': {Price: "149,00€", ImageURL: "./img/das_magische_schwanenpaar.png"},
     'Alchemie Code Sphäre "Ursonne Kompass"': {Price: "89,00€", ImageURL: "./img/alchemie_code_sphäre_ursonne_kompass.png"},
     'Pendel "Orion"': {Price: "35,00€", ImageURL: "./img/pendel_orion.png"},
+    'Lichtelfen Räucherstäbchen Rose - Trio': {Price: "69,00€", ImageURL: "./img/lichtelfen_räucherstäbchen_rose_-_trio.png"},
+    'The Fusion': {Price: "179,00€", ImageURL: "./img/the_fusion.png"},
+    'Die 7 Himmelsgaben': {Price: "59,00€", ImageURL: "./img/die_7_himmelsgaben.png"},
+    'Raumspray Licht': {Price: "41,00€", ImageURL: "./img/raumspray_licht.png"},
+    'Raumspray Auflöser der schwarzen Magie': {Price: "41,00€", ImageURL: "./img/raumspray_auflöser_der_schwarzen_magie.png"},
+    'Lichtelfen Räucherstäbchen "Heiliges Licht" - Trio': {Price: "59,00€", ImageURL: "./img/lichtelfen_räucherstäbchen_heiliges_licht_-_trio.png"},
+    'Personalisierter Sternenlöffel "Dein Lebensbegleiter"': {Price: "59,90€", ImageURL: "./img/personalisierter_sternenlöffel_dein_lebensbegleiter.png"},
+    'Pendel "Sirius"': {Price: "33,00€", ImageURL: "./img/pendel_sirius.png"},
+    'Buch - Die Seelenapotheke der ätherischen Öle': {Price: "27,90€", ImageURL: "./img/buch_-_die_seelenapotheke_der_ätherischen_öle.png"},
+    'Reichtumskugel': {Price: "85,00€", ImageURL: "./img/reichtumskugel.png"},
+    'Raumspray Schutz': {Price: "41,00€", ImageURL: "./img/raumspray_schutz.png"},
+    'Die 7 Chakren - Edelstein-Set': {Price: "49,00€", ImageURL: "./img/die_7_chakren_-_edelstein-set.png"},
+    'Kerze Heilige Familie aus Amenti': {Price: "39,50€", ImageURL: "./img/kerze_heilige_familie_aus_amenti.png"},
 };
 
 const leftSide = document.getElementById("left-side");
@@ -410,7 +423,7 @@ higherBtn.addEventListener("click", () => {
     let leftPriceNum = parseFloat(leftPrice.innerHTML.replace(",", ".").replace("€", ""));
     let rightPriceNum = parseFloat(rightRand.Price.replace(",", ".").replace("€", ""));
 
-    if (leftPriceNum < rightPriceNum || leftPriceNum == rightPriceNum) {
+    if (leftPriceNum <= rightPriceNum) {
         changeScore("add");
 
         btnContainer.style.display = "none";
@@ -445,7 +458,7 @@ lowerBtn.addEventListener("click", () => {
     let leftPriceNum = parseFloat(leftPrice.innerHTML.replace(",", ".").replace("€", ""));
     let rightPriceNum = parseFloat(rightRand.Price.replace(",", ".").replace("€", ""));
 
-    if (leftPriceNum < rightPriceNum || leftPriceNum == rightPriceNum) {
+    if (leftPriceNum < rightPriceNum) {
         btnContainer.style.display = "none";
         rightThan.style.display = "none";
         rightPrice.innerHTML = rightRand.Price;
