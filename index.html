@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Higher Lower Game AstroTV</title>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <link rel="stylesheet" href="./css/style.css">
+
+        <script type="text/javascript" src="./js/script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="game">
+            <div id="left-side" class="side">
+                <div class="center-wrapper">
+                    <div class="term-wrapper">
+                        <p id="left-name" class="side-name"></p>
+                        <p class="costs">kostet</p>
+                    </div>
+                
+                    <p id="left-price" class="side-price"></p>
+                </div>
+                
+            </div>
+    
+            <div id="border-line"></div>
+    
+            <div id="right-side" class="side">
+                <div class="center-wrapper">
+                    <div class="term-wrapper">
+                        <p id="right-name" class="side-name"></p>
+                        <p class="costs">kostet</p>
+                    </div>
+                    
+                    <p id="right-price" class="side-price"></p>
+        
+                    <div id="btn-container">
+                        <div id="higher-btn" class="btn">Mehr</div>
+                        <div id="lower-btn" class="btn">Weniger</div>
+                    </div>
+                                
+                    <p id="right-than">als </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="versus">
+            <p id="versus-text">VS</p>
+            <ion-icon name="close-outline" id="wrong-icon"></ion-icon>
+            <ion-icon name="checkmark-outline" id="right-icon"></ion-icon>
+        </div>
+
+        <p id="high-score">High-Score: 0</p>
+        <p id="score">Score: 0</p>
+    </body>
+</html>
