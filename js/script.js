@@ -289,6 +289,15 @@ const data = {
     'Schamanisches Familienstellen': {Price: "69,00€", ImageURL: "./img/schamanisches_familienstellen.png"},
     '5D Venus Energie': {Price: "79,00€", ImageURL: "./img/5d_venus_energie.png"},
     'Runenbeutel-Set "Lebensbaum" und "Thors Hammer"': {Price: "78,00€", ImageURL: "./img/runenbeutel-set_lebensbaum_und_thors_hammer.png"},
+    'Herzengel Arela': {Price: "89,00€", ImageURL: "./img/herzengel_arela.png"},
+    'Kraftquelle': {Price: "109,00€", ImageURL: "./img/kraftquelle.png"},
+    'Schamanische Hausreinigung': {Price: "69,00€", ImageURL: "./img/schamanische_hausreinigung.png"},
+    'Schlaf gut': {Price: "69,00€", ImageURL: "./img/schlaf_gut.png"},
+    'Energielöffel Frieden': {Price: "39,99€", ImageURL: "./img/energielöffel_frieden.png"},
+    'Elohim Kristallkugel klein': {Price: "27,00€", ImageURL: "./img/elohim_kristallkugel_klein.png"},
+    'Das magische Schwanenpaar': {Price: "149,00€", ImageURL: "./img/das_magische_schwanenpaar.png"},
+    'Alchemie Code Sphäre "Ursonne Kompass"': {Price: "89,00€", ImageURL: "./img/alchemie_code_sphäre_ursonne_kompass.png"},
+    'Pendel "Orion"': {Price: "35,00€", ImageURL: "./img/pendel_orion.png"},
 };
 
 const leftSide = document.getElementById("left-side");
