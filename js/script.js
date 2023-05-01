@@ -389,6 +389,14 @@ const data = {
     'Set Partnerschaft "Mr. & Mrs."': {Price: "79,98€", ImageURL: "./img/set_partnerschaft_mr_&_mrs.png"},
     'Die Hand von Fatima': {Price: "179,00€", ImageURL: "./img/die_hand_von_fatima.png"},
     'Orakelset: Symbole der Lichtelfen': {Price: "79,00€", ImageURL: "./img/orakelset_symbole_der_lichtelfen.png"},
+    'Glücksmünze 2023': {Price: "39,00€", ImageURL: "./img/glücksmünze_2023.png"},
+    'Energie-Löffel': {Price: "39,99€", ImageURL: "./img/energie-löffel.png"},
+    'Dein Haus-Schutzgeist': {Price: "39,00€", ImageURL: "./img/dein_haus-schutzgeist.png"},
+    'Seelenlicht "Tempel von Atlantis"': {Price: "69,00€", ImageURL: "./img/seelenlicht_tempel_von_atlantis.png"},
+    'Sablo-Power-Board mit Glückskugel': {Price: "199,00€", ImageURL: "./img/sablo-power-board_mit_glückskugel.png"},
+    'Paradise Stone "Spiritualität"': {Price: "179,00€", ImageURL: "./img/paradise_stone_spiritualität.png"},
+    'Paradise Stone "Reichtum"': {Price: "179,00€", ImageURL: "./img/paradise_stone_reichtum.png"},
+    'Mutter Maria die Knotenlöserin': {Price: "49,95€", ImageURL: "./img/mutter_maria_die_knotenlöserin.png"},
 };
 
 const leftSide = document.getElementById("left-side");
