@@ -226,7 +226,32 @@ const data = {
     'Kette "Regenbogenherz der Engel"': {Price: "59,90€", ImageURL: "./img/kette_regenbogenherz_der_engel.png"},
     'Engelenergiearmband "Raphael"': {Price: "28,50€", ImageURL: "./img/engelenergiearmband_raphael.png"},
     'Palo LOVES Neroli men': {Price: "78,00€", ImageURL: "./img/palo_loves_neroli_men.png"},
-}
+    'Palo LOVES Neroli lady': {Price: "78,00€", ImageURL: "./img/palo_loves_neroli_lady.png"},
+    'KRISTALLWIRBEL®-Kette "Open Heart"': {Price: "245,00€", ImageURL: "./img/kristallwirbel-kette_open_heart.png"},
+    'Himmelsperlen Ohrringe': {Price: "99,00€", ImageURL: "./img/himmelsperlen_ohrringe.png"},
+    'Bodyguard of Eternity': {Price: "99,95€", ImageURL: "./img/bodyguard_of_eternity.png"},
+    'Odins Armring': {Price: "79,00€", ImageURL: "./img/odins_armring.png"},
+    'Mars Neuzeit-Energie Amulett': {Price: "99,00€", ImageURL: "./img/mars_neuzeit-energie_amulett.png"},
+    'Armband "Freiheit & Neubeginn"': {Price: "49,90€", ImageURL: "./img/armband_freiheit_&_neubeginn.png"},
+    'Engelenergiearmband "Michael"': {Price: "28,50€", ImageURL: "./img/engelenergiearmband_michael.png"},
+    'Kette "Magischer Energieball"': {Price: "59,90€", ImageURL: "./img/kette_magischer_energieball.png"},
+    'Binderune "Loslassen"': {Price: "79,00€", ImageURL: "./img/binderune_loslassen.png"},
+    'Lichtelfenkette mit Binderune "Loslassen': {Price: "129,00€", ImageURL: "./img/lichtelfenkette_mit_binderune_loslassen.png"},
+    'Amulett "Liebe"': {Price: "245,00€", ImageURL: "./img/amulett_liebe.png"},
+    'Lichtelfenarmband "Glück"': {Price: "149,00€", ImageURL: "./img/lichtelfenarmband_glück.png"},
+    'Brosche der Lichtelfen': {Price: "179,00€", ImageURL: "./img/brosche_der_lichtelfen.png"},
+    'Edelsteinkette "Lebensfreude"': {Price: "99,00€", ImageURL: "./img/edelsteinkette_lebensfreude.png"},
+    'Kreuz des Lebens': {Price: "88,00€", ImageURL: "./img/kreuz_des_lebens.png"},
+    'Kette "Herz des Lebens"': {Price: "49,90€", ImageURL: "./img/kette_herz_des_lebens.png"},
+    'Befreiungsring - kupfer': {Price: "39,00€", ImageURL: "./img/befreiungsring_-_kupfer.png"},
+    'KRISTALLWIRBEL®-Kette "Chi Flow"': {Price: "189,00€", ImageURL: "./img/kristallwirbel-kette_chi_flow.png"},
+    'Fluchbrecher Kristall': {Price: "129,00€", ImageURL: "./img/fluchbrecher_kristall.png"},
+    'Keltischer Knoten': {Price: "79,00€", ImageURL: "./img/keltischer_knoten.png"},
+    'Kette Christusbewusstsein': {Price: "88,00€", ImageURL: "./img/kette_christusbewusstsein.png"},
+    'Kette mit Anhänger "Glückskugel"': {Price: "88,00€", ImageURL: "./img/kette_mit_anhänger_glückskugel.png"},
+    'Engelshimmel-Kette "Mein Engel ist bei mir"': {Price: "59,00€", ImageURL: "./img/engelshimmel-kette_mein_engel_ist_bei_mir.png"},
+    'Halskette "Karmakreuz"': {Price: "79,90€", ImageURL: "./img/halskette_karmakreuz.png"},
+};
 
 const leftSide = document.getElementById("left-side");
 const leftName = document.getElementById("left-name");
