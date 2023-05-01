@@ -210,6 +210,22 @@ const data = {
     'Schmuckset "Herzensliebe"': {Price: "149,99€", ImageURL: "./img/schmuckset_herzensliebe.png"},
     'Kleiner Schmetterling': {Price: "99,00€", ImageURL: "./img/kleiner_schmetterling.png"},
     'Schmetterling': {Price: "199,00€", ImageURL: "./img/schmetterling.png"},
+    'Halskette "Schlüssel zum Glück"': {Price: "32,29€", ImageURL: "./img/halskette_schlüssel_zum_glück.png"},
+    'Halskette "Schlüssel der Liebe"': {Price: "39,90€", ImageURL: "./img/halskette_schlüssel_der_liebe.png"},
+    'Ohrhänger Korrektur des Schicksals - kupfer': {Price: "39,00€", ImageURL: "./img/ohrhänger_korrektur_des_schicksals_-_kupfer.png"},
+    'Ohrstecker Korrektur des Schicksals - gold': {Price: "39,00€", ImageURL: "./img/ohrstecker_korrektur_des_schicksals_-_gold.png"},
+    'Ohrhänger Korrektur des Schicksals - gold': {Price: "39,00€", ImageURL: "./img/ohrhänger_korrektur_des_schicksals_-_gold.png"},
+    'Ohrstecker Korrektur des Schicksals - kupfer': {Price: "39,00€", ImageURL: "./img/ohrstecker_korrektur_des_schicksals_-_kupfer.png"},
+    'Kette "Sandalphons Freude"': {Price: "59,90€", ImageURL: "./img/kette_sandalphons_freude.png"},
+    'Kette SAMSARA - Karmarad': {Price: "99,00€", ImageURL: "./img/kette_samsara_-_karmarad.png"},
+    'Runenring Reichtum': {Price: "99,00€", ImageURL: "./img/runenring_reichtum.png"},
+    'Engelsflügel-Ring': {Price: "25,00€", ImageURL: "./img/engelsflügel-ring.png"},
+    'Lichtelfen-Ring': {Price: "119,00€", ImageURL: "./img/lichtelfen-ring.png"},
+    'Halskette "Reichtumskugel"': {Price: "88,00€", ImageURL: "./img/halskette_reichtumskugel.png"},
+    'Amulett "Reichtum"': {Price: "245,00€", ImageURL: "./img/amulett_reichtum.png"},
+    'Kette "Regenbogenherz der Engel"': {Price: "59,90€", ImageURL: "./img/kette_regenbogenherz_der_engel.png"},
+    'Engelenergiearmband "Raphael"': {Price: "28,50€", ImageURL: "./img/engelenergiearmband_raphael.png"},
+    'Palo LOVES Neroli men': {Price: "78,00€", ImageURL: "./img/palo_loves_neroli_men.png"},
 }
 
 const leftSide = document.getElementById("left-side");
