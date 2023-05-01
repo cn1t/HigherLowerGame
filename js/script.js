@@ -272,6 +272,23 @@ const data = {
     '5D Chakrenengel Armband': {Price: "79,00€", ImageURL: "./img/5d_chakrenengel_armband.png"},
     'Braunbär': {Price: "179,00€", ImageURL: "./img/braunbär.png"},
     'Armband Atlantis': {Price: "59,95€", ImageURL: "./img/armband_atlantis.png"},
+
+    // Spiritualität
+    '3er DVD-Set "The Secret", "e-motion" & "Peaceful Warrior"': {Price: "33,00€", ImageURL: "./img/3er_dvd-set_the_secret,_e-motion_&_peaceful_warrior.png"},
+    'Licht & Schatten - Energy-Bild 40x40': {Price: "89,90€", ImageURL: "./img/licht_&_schatten_-_energy-bild_40x40.png"},
+    'Energielöffel Partnerschaft "Mrs."': {Price: "39,99€", ImageURL: "./img/energielöffel_partnerschaft_mrs.png"},
+    'Endless Love - Kuscheldecke': {Price: "129,00€", ImageURL: "./img/endless_love_-_kuscheldecke.png"},
+    'Neuauflage: Schamanische Rauhnächte': {Price: "59,00€", ImageURL: "./img/neuauflage_schamanische_rauhnächte.png"},
+    'Das vollkommene Herz der Lichtelfen': {Price: "49,00€", ImageURL: "./img/das_vollkommene_herz_der_lichtelfen.png"},
+    'Set "5D Fluchbrecher Duo"': {Price: "178,00€", ImageURL: "./img/set_5d_fluchbrecher_duo.png"},
+    'Raumspray Reichtum': {Price: "41,00€", ImageURL: "./img/raumspray_reichtum.png"},
+    'Das allsehende Auge Gottes': {Price: "179,00€", ImageURL: "./img/das_allsehende_auge_gottes.png"},
+    '5D Chakrenengel Tasse': {Price: "59,00€", ImageURL: "./img/5d_chakrenengel_tasse.png"},
+    'Lederbeutel Thors Hammer': {Price: "39,00€", ImageURL: "./img/lederbeutel_thors_hammer.png"},
+    '5D Reiki': {Price: "69,00€", ImageURL: "./img/5d_reiki.png"},
+    'Schamanisches Familienstellen': {Price: "69,00€", ImageURL: "./img/schamanisches_familienstellen.png"},
+    '5D Venus Energie': {Price: "79,00€", ImageURL: "./img/5d_venus_energie.png"},
+    'Runenbeutel-Set "Lebensbaum" und "Thors Hammer"': {Price: "78,00€", ImageURL: "./img/runenbeutel-set_lebensbaum_und_thors_hammer.png"},
 };
 
 const leftSide = document.getElementById("left-side");
