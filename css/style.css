@@ -192,17 +192,17 @@ body {
     text-transform: capitalize;
 }
 
-.side-price {
+.side-val {
     font-size: 3.5rem;
     color: #fff989;
     font-weight: bold;
 }
 
-#right-price {
+#right-val {
     display: none;
 }
 
-.costs,
+.dif_verb,
 #right-than {
     font-size: 1.3rem;
     font-weight: bold;

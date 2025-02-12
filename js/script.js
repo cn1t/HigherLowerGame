@@ -1,14 +1,15 @@
-import { getData } from "./db.js";
+import { getData, getText } from "../topics/AstroTV/db.js";
 
 const data = getData();
+const text = getText();
 
 const leftSide = document.getElementById("left-side");
 const leftName = document.getElementById("left-name");
-const leftPrice = document.getElementById("left-price");
+const leftval = document.getElementById("left-val");
 
 const rightSide = document.getElementById("right-side");
 const rightName = document.getElementById("right-name");
-const rightPrice = document.getElementById("right-price");
+const rightval = document.getElementById("right-val");
 
 const rightThan = document.getElementById("right-than");
 
@@ -34,10 +35,27 @@ let rightRand = getRandomObject();
 let highScore = 0;
 let score = 0;
 
-if (!localStorage.getItem("astrotv-highscore")) {
-    localStorage.setItem("astrotv-highscore", highScore);
+if (!localStorage.getItem("higherlower-highscore")) {
+    localStorage.setItem("higherlower-highscore", highScore);
 }
-highScore = localStorage.getItem("astrotv-highscore");
+
+highScore = localStorage.getItem("higherlower-highscore");
+
+// Load text for pack
+const dif_verb_tags = document.querySelectorAll(".dif_verb");
+
+dif_verb_tags.forEach(dif_verb_tag => {
+    dif_verb_tag.innerHTML = text.dif_verb;
+});
+
+higherBtn.innerHTML = text.higher_btn;
+lowerBtn.innerHTML = text.lower_btn;
+
+document.getElementById("right-than").innerHTML = text.than + " ";
+
+restartBtn.innerHTML = text.play_again;
+
+
 
 while (rightRand.Name == leftRand.Name) {
     rightRand = getRandomObject();
@@ -62,7 +80,7 @@ function changeScore(operation) {
         if (score > highScore) {
             highScore = score;
 
-            localStorage.setItem("astrotv-highscore", highScore);
+            localStorage.setItem("higherlower-highscore", highScore);
 
             highScoreTag.innerHTML = "Highscore: " + highScore;
         }
@@ -87,8 +105,8 @@ function updateSides() {
     higherBtn.style.display = "block";
     lowerBtn.style.display = "block";
     rightThan.style.display = "block";
-    rightPrice.innerHTML = "";
-    rightPrice.style.display = "none";
+    rightval.innerHTML = "";
+    rightval.style.display = "none";
 
     borderLine.style.backgroundColor = "#ffffff";
     versus.style.backgroundColor = "#ffffff";
@@ -101,28 +119,28 @@ function updateSides() {
 function changeSide(side, object) {
     if (side == "left") {
         leftName.innerHTML = object.Name;
-        leftPrice.innerHTML = object.Price;
-        leftSide.style.background = `linear-gradient(0deg, rgb(36 35 36 / 53%), rgb(96 96 96 / 35%)), url(${object.ImageURL})`;
+        leftval.innerHTML = object.val;
+        leftSide.style.background = `linear-gradient(0deg, rgb(36 35 36 / 53%), rgb(96 96 96 / 35%)), url(./topics/${text.module_name}/img/${object.imageURL})`;
     } else if (side == "right") {
         rightName.innerHTML = object.Name;
-        rightSide.style.background = `linear-gradient(0deg, rgb(36 35 36 / 53%), rgb(96 96 96 / 35%)), url(${object.ImageURL})`;
+        rightSide.style.background = `linear-gradient(0deg, rgb(36 35 36 / 53%), rgb(96 96 96 / 35%)), url(./topics/${text.module_name}/img/${object.imageURL})`;
 
         rightThan.innerHTML = 'als "' + leftName.innerHTML + '"';
     }
 }
 
 higherBtn.addEventListener("click", () => {
-    let leftPriceNum = parseFloat(leftPrice.innerHTML.replace(",", ".").replace("€", ""));
-    let rightPriceNum = parseFloat(rightRand.Price.replace(",", ".").replace("€", ""));
+    let leftvalNum = parseFloat(leftval.innerHTML.replace(",", ".").replace("€", ""));
+    let rightvalNum = parseFloat(rightRand.val.replace(",", ".").replace("€", ""));
 
-    if (leftPriceNum <= rightPriceNum) {
+    if (leftvalNum <= rightvalNum) {
         changeScore("add");
 
         higherBtn.style.display = "none";
         lowerBtn.style.display = "none";
         rightThan.style.display = "none";
-        rightPrice.innerHTML = rightRand.Price;
-        rightPrice.style.display = "block";
+        rightval.innerHTML = rightRand.val;
+        rightval.style.display = "block";
 
         borderLine.style.backgroundColor = "#59ac51";
         versus.style.backgroundColor = "#59ac51";
@@ -137,8 +155,8 @@ higherBtn.addEventListener("click", () => {
         higherBtn.style.display = "none";
         lowerBtn.style.display = "none";
         rightThan.style.display = "none";
-        rightPrice.innerHTML = rightRand.Price;
-        rightPrice.style.display = "block";
+        rightval.innerHTML = rightRand.val;
+        rightval.style.display = "block";
 
         borderLine.style.backgroundColor = "#c75555";
         versus.style.backgroundColor = "#c75555";
@@ -151,15 +169,15 @@ higherBtn.addEventListener("click", () => {
 });
 
 lowerBtn.addEventListener("click", () => {
-    let leftPriceNum = parseFloat(leftPrice.innerHTML.replace(",", ".").replace("€", ""));
-    let rightPriceNum = parseFloat(rightRand.Price.replace(",", ".").replace("€", ""));
+    let leftvalNum = parseFloat(leftval.innerHTML.replace(",", ".").replace("€", ""));
+    let rightvalNum = parseFloat(rightRand.val.replace(",", ".").replace("€", ""));
 
-    if (leftPriceNum < rightPriceNum) {
+    if (leftvalNum < rightvalNum) {
         higherBtn.style.display = "none";
         lowerBtn.style.display = "none";
         rightThan.style.display = "none";
-        rightPrice.innerHTML = rightRand.Price;
-        rightPrice.style.display = "block";
+        rightval.innerHTML = rightRand.val;
+        rightval.style.display = "block";
 
         borderLine.style.backgroundColor = "#c75555";
         versus.style.backgroundColor = "#c75555";
@@ -174,8 +192,8 @@ lowerBtn.addEventListener("click", () => {
         higherBtn.style.display = "none";
         lowerBtn.style.display = "none";
         rightThan.style.display = "none";
-        rightPrice.innerHTML = rightRand.Price;
-        rightPrice.style.display = "block";
+        rightval.innerHTML = rightRand.val;
+        rightval.style.display = "block";
 
         borderLine.style.backgroundColor = "#59ac51";
         versus.style.backgroundColor = "#59ac51";
