@@ -26,6 +26,8 @@ const wrongIcon = document.getElementById("wrong-icon");
 const scoreTag = document.getElementById("score");
 const highScoreTag = document.getElementById("high-score");
 
+const restartBtn = document.getElementById("restart-btn");
+
 let leftRand = getRandomObject();
 let rightRand = getRandomObject();
 
@@ -82,7 +84,8 @@ function updateSides() {
         rightRand = getRandomObject();
     }
 
-    btnContainer.style.display = "inline-block";
+    higherBtn.style.display = "block";
+    lowerBtn.style.display = "block";
     rightThan.style.display = "block";
     rightPrice.innerHTML = "";
     rightPrice.style.display = "none";
@@ -115,7 +118,8 @@ higherBtn.addEventListener("click", () => {
     if (leftPriceNum <= rightPriceNum) {
         changeScore("add");
 
-        btnContainer.style.display = "none";
+        higherBtn.style.display = "none";
+        lowerBtn.style.display = "none";
         rightThan.style.display = "none";
         rightPrice.innerHTML = rightRand.Price;
         rightPrice.style.display = "block";
@@ -130,7 +134,8 @@ higherBtn.addEventListener("click", () => {
             updateSides();
         }, 900);
     } else {
-        btnContainer.style.display = "none";
+        higherBtn.style.display = "none";
+        lowerBtn.style.display = "none";
         rightThan.style.display = "none";
         rightPrice.innerHTML = rightRand.Price;
         rightPrice.style.display = "block";
@@ -140,6 +145,8 @@ higherBtn.addEventListener("click", () => {
         versusText.style.display = "none";
         wrongIcon.style.display = "flex";
         wrongIcon.style.color = "#ffffff";
+
+        onGameOver();
     }
 });
 
@@ -148,7 +155,8 @@ lowerBtn.addEventListener("click", () => {
     let rightPriceNum = parseFloat(rightRand.Price.replace(",", ".").replace("€", ""));
 
     if (leftPriceNum < rightPriceNum) {
-        btnContainer.style.display = "none";
+        higherBtn.style.display = "none";
+        lowerBtn.style.display = "none";
         rightThan.style.display = "none";
         rightPrice.innerHTML = rightRand.Price;
         rightPrice.style.display = "block";
@@ -158,10 +166,13 @@ lowerBtn.addEventListener("click", () => {
         versusText.style.display = "none";
         wrongIcon.style.display = "flex";
         wrongIcon.style.color = "#ffffff";
+
+        onGameOver();
     } else {
         changeScore("add");
 
-        btnContainer.style.display = "none";
+        higherBtn.style.display = "none";
+        lowerBtn.style.display = "none";
         rightThan.style.display = "none";
         rightPrice.innerHTML = rightRand.Price;
         rightPrice.style.display = "block";
@@ -178,6 +189,13 @@ lowerBtn.addEventListener("click", () => {
     }
 });
 
+restartBtn.addEventListener("click", () => {
+    location.reload();
+});
+
+function onGameOver() {
+    restartBtn.style.display = "block";
+}
 
 // Setup
 

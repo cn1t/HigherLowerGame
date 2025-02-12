@@ -236,3 +236,60 @@ body {
     font-size: 3rem;
     transition: all 0.5s ease-in-out;
 }
+
+#restart-btn {
+    color: #fff989;
+    width: 12.5rem;
+    padding: 0.625rem;
+    border-radius: 2.5rem;
+    margin-bottom: 1rem;
+    display: none;
+    border: 0.2rem solid #fff;
+    -webkit-box-shadow: 0 0.9375rem 2.5rem 0 rgba(0,0,0,.1);
+    box-shadow: 0 0.9375rem 2.5rem 0 rgba(0,0,0,.1);
+    outline: 0;
+    background: transparent no-repeat 0 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all .1s ease-in;
+}
+
+#restart-btn::before {
+    display: none;
+    border-style: solid;
+    line-height: 0;
+    position: absolute !important;
+    bottom: 10%;
+    left: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    border-color: transparent transparent #fff;
+    border-width: 0 0.46875rem 0.625rem;
+    transition: all .2s ease;
+}
+
+#restart-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#restart-btn:hover::before {
+    border-color: transparent transparent black;
+    transform: translateY(-0.6vh);
+}
