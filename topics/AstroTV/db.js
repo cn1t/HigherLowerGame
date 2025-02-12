@@ -1,6 +1,7 @@
 const text = {
     "module_name": "AstroTV",
-    "dif_verb": "kostet",
+    "left_dif_verb": "kostet",
+    "right_dif_verb": "kostet",
     "than": "als",
     "higher_btn": "Mehr",
     "lower_btn": "Weniger",

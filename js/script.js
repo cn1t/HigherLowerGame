@@ -1,4 +1,5 @@
-import { getData, getText } from "../topics/AstroTV/db.js";
+import { getData, getText } from "../topics/CorruptionIndex/db.js"; // Change selected pack
+
 
 const data = getData();
 const text = getText();
@@ -41,11 +42,11 @@ if (!localStorage.getItem("higherlower-highscore")) {
 highScore = localStorage.getItem("higherlower-highscore");
 
 // Load text for pack
-const dif_verb_tags = document.querySelectorAll(".dif_verb");
+const left_dif_verb_tag = document.querySelector(".left_dif_verb");
+const right_dif_verb_tag = document.querySelector(".right_dif_verb");
 
-dif_verb_tags.forEach(dif_verb_tag => {
-    dif_verb_tag.innerHTML = text.dif_verb;
-});
+left_dif_verb_tag.innerHTML = text.left_dif_verb;
+right_dif_verb_tag.innerHTML = text.right_dif_verb;
 
 higherBtn.innerHTML = text.higher_btn;
 lowerBtn.innerHTML = text.lower_btn;
@@ -124,7 +125,7 @@ function changeSide(side, object) {
         rightName.innerHTML = object.Name;
         rightSide.style.background = `linear-gradient(0deg, rgb(36 35 36 / 53%), rgb(96 96 96 / 35%)), url(./topics/${text.module_name}/img/${object.imageURL})`;
 
-        rightThan.innerHTML = 'als "' + leftName.innerHTML + '"';
+        rightThan.innerHTML = text.than + ' "' + leftName.innerHTML + '"';
     }
 }
 
