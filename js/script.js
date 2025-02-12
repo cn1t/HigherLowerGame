@@ -13,7 +13,6 @@ const rightval = document.getElementById("right-val");
 
 const rightThan = document.getElementById("right-than");
 
-const btnContainer = document.getElementById("btn-container");
 const higherBtn = document.getElementById("higher-btn");
 const lowerBtn = document.getElementById("lower-btn");
 
