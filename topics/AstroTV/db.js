@@ -6,6 +6,7 @@ const text = {
     "higher_btn": "Mehr",
     "lower_btn": "Weniger",
     "play_again": "Erneut spielen",
+    "invert": false,
 }
 
 const data = {

@@ -133,6 +133,11 @@ higherBtn.addEventListener("click", () => {
     let leftvalNum = parseFloat(leftval.innerHTML.replace(",", ".").replace("€", ""));
     let rightvalNum = parseFloat(rightRand.val.replace(",", ".").replace("€", ""));
 
+    if (text.invert == true) {
+        leftvalNum = 100 - leftvalNum;
+        rightvalNum = 100 - rightvalNum;
+    }
+
     if (leftvalNum <= rightvalNum) {
         changeScore("add");
 
@@ -171,6 +176,11 @@ higherBtn.addEventListener("click", () => {
 lowerBtn.addEventListener("click", () => {
     let leftvalNum = parseFloat(leftval.innerHTML.replace(",", ".").replace("€", ""));
     let rightvalNum = parseFloat(rightRand.val.replace(",", ".").replace("€", ""));
+
+    if (text.invert == true) {
+        leftvalNum = 100 - leftvalNum;
+        rightvalNum = 100 - rightvalNum;
+    }
 
     if (leftvalNum < rightvalNum) {
         higherBtn.style.display = "none";
